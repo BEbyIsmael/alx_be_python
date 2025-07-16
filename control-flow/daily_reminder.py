@@ -13,13 +13,13 @@ match priority:
             )
     case "medium":
         if time_bound == "yes":
-            print("This task should be done soon, but not immediately.")
+            print(f"Reminder: {task} should be done soon, but not immediately.")
         else:
-            print("This task is of moderate importance and can be scheduled later.")
+            print(f"Note: {task} is of moderate importance and can be scheduled later.")
     case "low":
         if time_bound == "yes":
             print(
-                "This task can be done at your convenience, but should not be delayed too long."
+                f"Reminder: {task} can be done at your convenience, but should not be delayed too long."
             )
         else:
-            print("This task is not urgent and can be done whenever you have time.")
+            print(f"Note: {task} is not urgent and can be done whenever you have time.")
