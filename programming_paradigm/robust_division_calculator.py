@@ -12,7 +12,7 @@ def safe_divide(numerator, denominator):
         denom = float(denominator)
         try:
             result = num / denom
-            return print(f"The result of the division is {result}")
+            return f"The result of the division is {result}"
         except ZeroDivisionError:
             return "Error: Cannot divide by zero."
     except ValueError:
